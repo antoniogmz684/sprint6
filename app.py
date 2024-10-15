@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-car_data = pd.read_csv('C:\\Users\\antonio.gomez-gonzal\\OneDrive - Believe\\Desktop\\Data Science\\Sprint 6\\sprint6\\vehicles_us.csv') # leer los datos
+car_data = pd.read_csv('Sprint 6\sprint6\vehicles_us.csv') # leer los datos
 hist_cbox = st.checkbox('Construir histograma') #Crea un botón
 disp_cbox = st.checkbox('Construir gráfico de dispersión')
 
