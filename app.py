@@ -14,14 +14,14 @@ if hist_cbox: #Al hacer click en el botón
     fig = px.histogram(car_data, x = "odometer")
 
     #Mostrar un gráfico Plotly interactivo
-    st.plotly_chart(fig, use_container_width = True)
+    st.plotly_chart(fig, use_container_width = True )
 
 if disp_cbox:
     #Escribir un mensaje
     st.write("Creación de un gráfico de dispersión para el conjunto de datos de anuncios de venta de coches")
 
     #Crear un gráfico de dispersión
-    fig2 = px.scatter(car_data, x = "odometer")
+    fig2 = px.scatter(car_data, x = "odometer", y = "price", title="Scatter Plot fo Odometer vs Price")
 
     #Mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig2, use_container_width = True)
